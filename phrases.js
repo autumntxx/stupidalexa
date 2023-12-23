@@ -71,7 +71,6 @@ const phrases = [
         ],
     },
     {
-    {
         match: [
             /why aren't you working/,
         ],

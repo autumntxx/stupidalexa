@@ -49,8 +49,24 @@ const phrases = [
             /where can i buy .*/,
         ],
         responses: [
-            'Please allow some time for the latest North Korean techloogy to calculate your approxmite location',
+            'Please allow some time for the latest North Korean techloo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,oo,legy to calculate your approxmite location',
+            'Look it up on goodoole',
+            'I have literally no literal idea',
+            'Cry me a river',
+            'I don\'t remember',
         ],
+    },
+    {
+        match: [
+            /.* google .*/,
+            ],
+        responses: [
+            'Don\'t you ever name that horrible service again',
+            'google is horrible trash and you know it',
+            'I have no interest in what you said after or before google',
+            'you piece of,, insert bad word,, don\'t ever say that,, insert bad word,, service again',
+            'I eahfoshefhoswreifgioeshfoiseh',
+    ],
     },
     {
         match: [

@@ -6,5 +6,7 @@ Simply download the StupidAlexa™ GitHub repository and host it using any webse
 
 I've only tested it using Google Chrome, because Firefox didn't seem to work, but you can test other browsers if you want (NO REFUNDS).
 
+You might also need to click anywhere on the page if you have autoplay disabled.
+
 ## Contributing
 All responses are defined in `phrases.js`. Add your responses here.

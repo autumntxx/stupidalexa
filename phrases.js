@@ -108,7 +108,7 @@ const phrases = [
         responses: [
             (msg) => {
                 setTimeout(async () => {
-                    new Audio('/assets/calling.ogg').play();
+                    new Audio('./assets/calling.ogg').play();
                 }, 4000);
                 return `Alright, calling ${msg.match(/call (.*)/)[1]} from your contacts`;
             },

@@ -26,6 +26,8 @@ async function parseMessage(msg) {
         result = result.replace('what have', '');
         result = result.replace(',', '');
 
+        if (result.match(/.* \/ 0/)) throw new Error(); // breaking out
+
         mathparsed = math.evaluate(result);
         mathparsed = mathparsed * (1 + ((math.random() * .2) - .1));
         mathparsed = Math.round(mathparsed * 10) / 10;

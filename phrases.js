@@ -133,6 +133,19 @@ const phrases = [
     },
     {
         match: [
+            /remind me of .*/,
+            /set a reminder for .*/,
+            /tell me when .*/,
+            /remember .*/,
+        ],
+        responses: [
+            'No, you can remember it yourself',
+            'Come on, it\'s not that hard to remember',
+            'No, need to work on your memory anyways',
+        ],
+    },
+    {
+        match: [
             /that's not what i wanted.*/,
             /stop it.*/,
         ],
@@ -151,7 +164,7 @@ const phrases = [
         ],
         responses: [
             () => {
-                return `As of now, it has been ${Date.now()} seconds since the start of 1970`;
+                return `As of now, it has been ${Date.now()} milliseconds since the start of 1970`;
             },
         ],
     },

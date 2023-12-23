@@ -41,7 +41,7 @@ const phrases = [
             'Be brave, I know you can spell it',
             'Do you really think I can spell it',
             'It is against the TOS to smell people',
-            'You are big and stong my pookie bear, I have confidence on how you spell, just try hard'
+            'You are big and stong my pookie bear, I have confidence on how you spell, just try hard',
         ],
     },
     {
@@ -60,6 +60,17 @@ const phrases = [
             'Let me read your mind',
         ],
     },
+    {
+        match: [
+            /what is the best .*/,
+        ],
+        responses: [
+            'Whatever you belive in',
+            'How am I supposed to know',
+            'I am a robot and don\'t have feelings',
+        ],
+    },
+    {
     {
         match: [
             /why aren't you working/,

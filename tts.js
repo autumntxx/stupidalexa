@@ -1,4 +1,4 @@
-async function say(text) {
+function say(text) {
     let utterance = new SpeechSynthesisUtterance(text);
     utterance.voice = speechSynthesis.getVoices().find(voice => voice.name == 'Google US English');
     utterance.pitch = .9;

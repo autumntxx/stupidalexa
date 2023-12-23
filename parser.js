@@ -19,6 +19,9 @@ async function parseMessage(msg) {
     };
 
     const res = possibleresponses[Math.floor(Math.random() * possibleresponses.length)];
-    console.log(res);
-    say(res);
+    if (typeof res == 'string') {
+        say(res);
+    } else if (typeof res == 'function') {
+        say(res(reqmsg));
+    };
 };

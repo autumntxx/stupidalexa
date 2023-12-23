@@ -43,6 +43,53 @@ const phrases = [
     },
     {
         match: [
+            /add .* to my shopping list/,
+        ],
+        responses: [
+            (msg) => {
+                return `Okay, I've removed ${msg.match(/add (.*) to my shopping list/)[1]} from your shopping list`;
+            },
+        ],
+    },
+    {
+        match: [
+            /that's not what i wanted/,
+        ],
+        responses: [
+            'Too bad',
+            'Cry about it',
+        ],
+    },
+
+    {
+        match: [
+            /what time is it/,
+        ],
+        responses: [
+            () => {
+                return `As of now, it has been ${Date.now()} seconds since the start of 1970`;
+            },
+        ],
+    },
+
+    // Calls
+    {
+        match: [
+            /call .*/,
+        ],
+        responses: [
+            (msg) => {
+                setTimeout(async () => {
+                    new Audio('/assets/calling.ogg').play();
+                }, 4000);
+                return `Alright, calling ${msg.match(/call (.*)/)[1]} from your contacts`;
+            },
+        ],
+    },
+
+    // Default
+    {
+        match: [
             /.*/,
         ],
         responses: [

@@ -34,6 +34,34 @@ const phrases = [
     },
     {
         match: [
+            /how do you spell .*/,
+        ],
+        responses: [
+            'Sorry, I am a very low iq speech to text processer and cannot comprehend the apioforms entering your house',
+            'Be brave, I know you can spell it',
+            'Do you really think I can spell it',
+            'It is against the TOS to smell people',
+            'You are big and stong my pookie bear, I have confidence on how you spell, just try hard'
+        ],
+    },
+    {
+        match: [
+            /where can i buy .*/,
+        ],
+        responses: [
+            'Please allow some time for the latest North Korean techloogy to calculate your approxmite location',
+        ],
+    },
+    {
+        match: [
+            /what is my name/,
+        ],
+        responses: [
+            'Let me read your mind',
+        ],
+    },
+    {
+        match: [
             /why aren't you working/,
         ],
         responses: [

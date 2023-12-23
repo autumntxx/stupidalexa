@@ -14,8 +14,8 @@ const phrases = [
 
     {
         match: [
-            /turn .* the lights/,
-            /turn .* the .* light/,
+            /turn .* the lights.*/,
+            /turn .* the .* light.*/,
         ],
         responses: [
             'I\'m sorry, I can\'t ignite kites, but I can turn on the lights for you. Shall I do that?',
@@ -31,7 +31,7 @@ const phrases = [
     },
     {
         match: [
-            /play .* smooth jazz/,
+            /play .* smooth jazz.*/,
         ],
         responses: [
             'Added spray for fruit bats to your Amazon cart',
@@ -39,7 +39,7 @@ const phrases = [
     },
     {
         match: [
-            /.* the garage door/,
+            /.* the garage door.*/,
         ],
         responses: [
             'Okay, I will order you a new floor',
@@ -71,9 +71,9 @@ const phrases = [
     },
     {
         match: [
-            /what is my name/,
-            /what's my name/,
-            /do you know my name/,
+            /what is my name.*/,
+            /what's my name.*/,
+            /do you know my name.*/,
         ],
         responses: [
             'Let me read your mind',
@@ -96,7 +96,7 @@ const phrases = [
     },
     {
         match: [
-            /why aren't you working/,
+            /why aren't you working.*/,
         ],
         responses: [
             'Excuse me?',
@@ -105,8 +105,8 @@ const phrases = [
     },
     {
         match: [
-            /add .* to my shopping list/,
-            /add .* to my grocery list/,
+            /add .* to my shopping list.*/,
+            /add .* to my grocery list.*/,
         ],
         responses: [
             (msg) => {
@@ -116,8 +116,8 @@ const phrases = [
     },
     {
         match: [
-            /that's not what i wanted/,
-            /stop it/,
+            /that's not what i wanted.*/,
+            /stop it.*/,
         ],
         responses: [
             'Too bad',
@@ -128,9 +128,9 @@ const phrases = [
 
     {
         match: [
-            /what time is it/,
-            /what is the date/,
-            /what day is it/,
+            /what time is it.*/,
+            /what is the date.*/,
+            /what day is it.*/,
         ],
         responses: [
             () => {
@@ -140,17 +140,31 @@ const phrases = [
     },
     {
         match: [
-            /who asked/,
+            /who asked.*/,
         ],
         responses: [
             'I did',
+        ],
+    },
+    {
+        match: [
+            /what's .* \/ 0.*/,
+            /what is .* \/ 0.*/,
+        ],
+        responses: [
+            (msg) => {
+                setTimeout(async () => {
+                    new Audio('./assets/notshuttindown.ogg').play();
+                }, 8200);
+                return `${msg.match(/s (.*) \/ 0/)[1]} divided by zero is.... is.... is..... Ahahaaooaoohaohoohaaoooohahaoaooaaoahoahaohahahah malfunctioning.... malfunctioning.... shutting down`;
+            },
         ],
     },
 
     // Calls
     {
         match: [
-            /call .*/,
+            /call .*.*/,
         ],
         responses: [
             (msg) => {

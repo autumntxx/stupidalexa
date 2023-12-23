@@ -7,4 +7,4 @@ Simply download the StupidAlexa™ GitHub repository and host it using any webse
 I've only tested it using Google Chrome, because Firefox didn't seem to work, but you can test other browsers if you want (NO REFUNDS).
 
 ## Contributing
-All responses are defined in `speechrec.js`. Add your responses here.
+All responses are defined in `phrases.js`. Add your responses here.

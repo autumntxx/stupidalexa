@@ -11,7 +11,24 @@ const phrases = [
                 'I eahfoshefhoswreifgioeshfoiseh',
         ],
     },
-
+    {
+        match: [
+            /.*father.*/,
+            /.*dad.*/,
+        ],
+        responses: [
+            'I see no father in your contacts',
+        ],
+    },
+    {
+        match: [
+            /.*mother.*/,
+            /.*mom.*/,
+        ],
+        responses: [
+            'I see no mother in your contacts',
+        ],
+    },
     {
         match: [
             /turn .* the lights/,

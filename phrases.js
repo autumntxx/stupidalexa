@@ -1,6 +1,19 @@
 const phrases = [
     {
         match: [
+            /.*google.*/,
+            ],
+            responses: [
+                'Don\'t you ever name that horrible service again',
+                'google is horrible trash and you know it',
+                'I have no interest in what you said after or before google',
+                'you piece of,, insert bad word,, don\'t ever say that,, insert bad word,, service again',
+                'I eahfoshefhoswreifgioeshfoiseh',
+        ],
+    },
+
+    {
+        match: [
             /turn .* the lights/,
             /turn .* the .* light/,
         ],
@@ -55,18 +68,6 @@ const phrases = [
             'Cry me a river',
             'I don\'t remember',
         ],
-    },
-    {
-        match: [
-            /.* google .*/,
-            ],
-        responses: [
-            'Don\'t you ever name that horrible service again',
-            'google is horrible trash and you know it',
-            'I have no interest in what you said after or before google',
-            'you piece of,, insert bad word,, don\'t ever say that,, insert bad word,, service again',
-            'I eahfoshefhoswreifgioeshfoiseh',
-    ],
     },
     {
         match: [

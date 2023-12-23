@@ -18,11 +18,12 @@ async function parseMessage(msg) {
         };
     };
 
-    let mathparsed;w
+    let mathparsed;
 
     try {
         let result = reqmsg.replace('what\'s', '');
         result = result.replace('what is', '');
+        result = result.replace('what have', '');
         result = result.replace(',', '');
 
         mathparsed = math.evaluate(result);

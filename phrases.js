@@ -49,7 +49,7 @@ const phrases = [
             /where can i buy .*/,
         ],
         responses: [
-            'Please allow some time for the latest North Korean techloogy to calculate your approxmite location',
+            'Please allow some time for the latest North Korean techlooooooooooooooooooooooooooooooooooooooogy to calculate your approxmite location',
         ],
     },
     {

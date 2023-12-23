@@ -55,14 +55,21 @@ const phrases = [
     {
         match: [
             /what is my name/,
+            /what's my name/,
+            /do you know my name/,
         ],
         responses: [
             'Let me read your mind',
+            'Ah yes, let me read your mind',
         ],
     },
     {
         match: [
-            /what is the best .*/,
+            /.* is the best .*/,
+            /.* would you recommend .*/,
+            /.* is your favorite .*/,
+            /.* is the worst .*/,
+            /what is your opinion on .*/,
         ],
         responses: [
             'Whatever you belive in',
@@ -82,6 +89,7 @@ const phrases = [
     {
         match: [
             /add .* to my shopping list/,
+            /add .* to my grocery list/,
         ],
         responses: [
             (msg) => {
@@ -92,21 +100,33 @@ const phrases = [
     {
         match: [
             /that's not what i wanted/,
+            /stop it/,
         ],
         responses: [
             'Too bad',
             'Cry about it',
+            'womp womp',
         ],
     },
 
     {
         match: [
             /what time is it/,
+            /what is the date/,
+            /what day is it/,
         ],
         responses: [
             () => {
                 return `As of now, it has been ${Date.now()} seconds since the start of 1970`;
             },
+        ],
+    },
+    {
+        match: [
+            /who asked/,
+        ],
+        responses: [
+            'I did',
         ],
     },
 
